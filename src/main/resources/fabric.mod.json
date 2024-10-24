@@ -9,32 +9,17 @@
 	],
 	"contact": {
 		"homepage": "https://rico040.su/",
-		"sources": "https://github.com/Rico040/meowcraft-mod"
+		"sources": "https://github.com/Rico040/meowcraft-mod",
+		"issues": "https://github.com/Rico040/meowcraft-mod/issues"
 	},
 	"license": "Unlicense",
 	"icon": "assets/meowcraft/icon.png",
-	"environment": "*",
-	"entrypoints": {
-		"main": [
-			"su.rico040.meowcraft.Meowcraft"
-		],
-		"fabric-datagen": [
-			"su.rico040.meowcraft.MeowcraftDataGenerator"
-		],
-		"client": [
-			"su.rico040.meowcraft.MeowcraftClient"
-		]
-	},
+	"environment": "client",
 	"mixins": [
 		"meowcraft.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.7",
-		"minecraft": "~1.21",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"minecraft": ">=1.21"
 	}
 }
