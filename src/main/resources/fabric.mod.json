@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "meowcraft",
+	"version": "${version}",
+	"name": "Meowcraft",
+	"description": "MEOW MEOW I WILL MEOW AT YOU!",
+	"authors": [
+		"Rico040"
+	],
+	"contact": {
+		"homepage": "https://rico040.su/",
+		"sources": "https://github.com/Rico040/meowcraft-mod"
+	},
+	"license": "Unlicense",
+	"icon": "assets/meowcraft/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"su.rico040.meowcraft.Meowcraft"
+		],
+		"fabric-datagen": [
+			"su.rico040.meowcraft.MeowcraftDataGenerator"
+		],
+		"client": [
+			"su.rico040.meowcraft.MeowcraftClient"
+		]
+	},
+	"mixins": [
+		"meowcraft.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.7",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
